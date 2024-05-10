@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CoursesWebAPI.Presentation</name>
+    </assembly>
+    <members>
+        <member name="T:CoursesWebAPI.Presentation.Controllers.Entities.ActivitiesController">
+            <summary>
+            Activity controller
+            </summary>
+        </member>
+        <member name="M:CoursesWebAPI.Presentation.Controllers.Entities.ActivitiesController.GetActivities(CoursesWebAPI.Shared.RequestFeatures.ActivityQueryParameters,System.Threading.CancellationToken)">
+            <summary>
+            Get activities by query parameters
+            </summary>
+            <param name="queryParameters"><see cref="T:CoursesWebAPI.Shared.RequestFeatures.ActivityQueryParameters"/></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoursesWebAPI.Presentation.Controllers.Entities.ActivitiesController.GetActivityById(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Get activity by id <see cref="T:System.Guid"/>
+            </summary>
+            <param name="id">Activity id <see cref="T:System.Guid"/></param>
+            <param name="cancellationToken"></param>
+            <returns>Returns <see cref="T:CoursesWebAPI.Shared.DataTransferObjects.Entities.ActivityFullDto"/></returns>
+        </member>
+        <member name="M:CoursesWebAPI.Presentation.Controllers.Entities.ActivitiesController.CreateActivity(CoursesWebAPI.Shared.DataTransferObjects.Entities.ActivityForCreatingDto,System.Threading.CancellationToken)">
+            <summary>
+            Create new activity.
+            </summary>
+            <param name="activityDto"></param>
+            <param name="cancellationToken"></param>
+            <returns>Something</returns>
+            <response code="201">Returns the newly created item.</response>
+            <response code="400">Returns result with validation errors.</response>
+        </member>
+    </members>
+</doc>
